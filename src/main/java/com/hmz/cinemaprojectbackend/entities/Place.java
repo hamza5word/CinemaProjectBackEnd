@@ -18,7 +18,9 @@ public class Place implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private int numero;
-    private double longitude, latitude, atitude;
+    private double longitude;
+    private double latitude;
+    private double atitude;
 
     @ManyToOne
     private Salle salle;

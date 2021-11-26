@@ -18,7 +18,9 @@ public class Ville implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private double longitude, latitude, atitude;
+    private double longitude;
+    private double latitude;
+    private double atitude;
 
     @OneToMany(mappedBy = "ville")
     private Collection<Cinema> cinemas;

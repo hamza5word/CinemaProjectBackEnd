@@ -15,7 +15,9 @@ public class Cinema implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private double longitude, latitude, atitude;
+    private double longitude;
+    private double latitude;
+    private double atitude;
     private int nombreSalles;
 
     @OneToMany(mappedBy = "cinema")
