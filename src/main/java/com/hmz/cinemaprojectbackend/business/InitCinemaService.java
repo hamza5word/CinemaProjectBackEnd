@@ -6,10 +6,10 @@ public interface InitCinemaService {
     void initCinemas();
     void initSalles();
     void initPlaces();
-    void initTickets();
     void initCategories();
     void initFilms();
     void initSeances();
     void initProjections();
+    void initTickets();
 
 }

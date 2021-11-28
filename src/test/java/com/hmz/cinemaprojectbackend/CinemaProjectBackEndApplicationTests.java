@@ -20,11 +20,11 @@ class CinemaProjectBackEndApplicationTests {
         Assertions.assertDoesNotThrow(() -> initCinemaService.initCinemas());
         Assertions.assertDoesNotThrow(() -> initCinemaService.initSalles());
         Assertions.assertDoesNotThrow(() -> initCinemaService.initPlaces());
-        Assertions.assertDoesNotThrow(() -> initCinemaService.initTickets());
         Assertions.assertDoesNotThrow(() -> initCinemaService.initCategories());
         Assertions.assertDoesNotThrow(() -> initCinemaService.initFilms());
         Assertions.assertDoesNotThrow(() -> initCinemaService.initSeances());
         Assertions.assertDoesNotThrow(() -> initCinemaService.initProjections());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initTickets());
     }
 
 }

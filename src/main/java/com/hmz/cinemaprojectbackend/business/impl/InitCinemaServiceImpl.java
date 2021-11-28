@@ -5,10 +5,13 @@ import com.hmz.cinemaprojectbackend.dao.*;
 import com.hmz.cinemaprojectbackend.entities.*;
 import com.hmz.operations.Random;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
-import java.time.ZoneId;
+import javax.transaction.Transactional;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Stream;
@@ -16,6 +19,8 @@ import java.util.stream.Stream;
 @Service
 @RequiredArgsConstructor
 public class InitCinemaServiceImpl implements InitCinemaService {
+
+    Logger logger = LoggerFactory.getLogger(InitCinemaServiceImpl.class);
 
     private final VilleRepository villeRepository;
     private final CinemaRepository cinemaRepository;
@@ -34,6 +39,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
             v.setName(ville);
             villeRepository.save(v);
         });
+        logger.info(">> Villes initialization completed");
     }
 
     @Override
@@ -45,6 +51,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
             c.setVille(v);
             cinemaRepository.save(c);
         }));
+        logger.info(">> Cinemas initialization completed");
     }
 
     @Override
@@ -58,6 +65,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
                 salleRepository.save(s);
             }
         });
+        logger.info(">> Salles initialization completed");
     }
 
     @Override
@@ -70,18 +78,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
                 placeRepository.save(p);
             }
         });
-    }
-
-    @Override
-    public void initTickets() {
-        placeRepository.findAll().forEach(p -> {
-            Ticket t = new Ticket();
-            t.setPrix(new Random(100, 300).getRandom());
-            t.setCodePaiment(new Random(10000, 99999).getIntRandom());
-            t.setReservee(false);
-            t.setPlace(p);
-            ticketRepository.save(t);
-        });
+        logger.info(">> Places initialization completed");
     }
 
     @Override
@@ -91,46 +88,76 @@ public class InitCinemaServiceImpl implements InitCinemaService {
             c.setName(categorie);
             categorieRepository.save(c);
         });
+        logger.info(">> Categories initialization completed");
     }
 
     @Override
     public void initFilms() {
-        categorieRepository.findAll().forEach(c -> {
+        List<Categorie> categories = categorieRepository.findAll();
+        Stream.of("Avengers", "Power Up", "Speed", "Shang chi", "Dragon", "Lord of the Rings").forEach(film -> {
             Film f = new Film();
-            f.setTitre("Film " + c.getName());
-            f.setCategorie(c);
+            f.setTitre(film);
+            f.setDuree(new Random(1, 3).getIntRandom());
+            f.setPhoto(film + ".jpg");
+            f.setCategorie(categories.get(new Random(0, categories.size()).getIntRandom()));
             filmRepository.save(f);
         });
+        logger.info(">> Films initialization completed");
     }
 
 
     @Override
     public void initSeances() {
-        for(int i = 0; i<6; i++) {
+        DateFormat format = new SimpleDateFormat("HH:mm");
+        Stream.of("18:00", "15:30", "11:40", "10:15").forEach(seance -> {
             Seance s = new Seance();
-            int year = new Random(1998, 2020).getIntRandom();
-            int month = new Random(1, 12).getIntRandom();
-            int day = new Random(1, 28).getIntRandom();
-            int hour = new Random(0, 24).getIntRandom();
-            int minute = new Random(0, 60).getIntRandom();
-            s.setHeureDebut(Date.from(LocalDateTime.of(year, month, day, hour, minute).atZone(ZoneId.systemDefault()).toInstant()));
-            seanceRepository.save(s);
-        }
+            try {
+                s.setHeureDebut(format.parse(seance));
+                seanceRepository.save(s);
+            } catch (Exception e) {
+                e.printStackTrace();
+                logger.error(e.getMessage(), e);
+            }
+        });
+        logger.info(">> Seances initialization completed");
     }
 
     @Override
+    @Transactional
     public void initProjections() {
-        List<Film> films = filmRepository.findAll();
-        List<Salle> salles = salleRepository.findAll();
-        List<Seance> seances = seanceRepository.findAll();
-        for(int i = 0; i<3; i++) {
-            Projection p = new Projection();
-            p.setPrix(new Random(100, 500).getRandom());
-            p.setFilm(films.get(new Random(0, films.size()).getIntRandom()));
-            p.setSalle(salles.get(new Random(0, salles.size()).getIntRandom()));
-            p.setSeance(seances.get(new Random(0, seances.size()).getIntRandom()));
-            projectionRepository.save(p);
-        }
+        villeRepository.findAll().forEach(v -> {
+            v.getCinemas().forEach(c -> {
+                c.getSalles().forEach(s -> {
+                    filmRepository.findAll().forEach(f -> {
+                        seanceRepository.findAll().forEach(se -> {
+                            Projection p = new Projection();
+                            p.setFilm(f);
+                            p.setDate(new Date());
+                            p.setSeance(se);
+                            p.setSalle(s);
+                            p.setPrix(new Random(100, 500).getRandom());
+                            projectionRepository.save(p);
+                        });
+                    });
+                });
+            });
+        });
+        logger.info(">> Projections initialization completed");
+    }
+
+    @Override
+    public void initTickets() {
+        placeRepository.findAll().forEach(p -> {
+            for(int i = 0; i<new Random(1, 3).getIntRandom(); i++) {
+                Ticket t = new Ticket();
+                t.setNomClient("Client " + (i + 1));
+                t.setPrix(new Random(100, 300).getRandom());
+                t.setReservee(false);
+                t.setPlace(p);
+                ticketRepository.save(t);
+            }
+        });
+        logger.info(">> Tickets initialization completed");
     }
 
 }
