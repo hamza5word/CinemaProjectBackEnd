@@ -893,3 +893,26 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2021-11-28 14:33:32.805  INFO 18832 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-11-28 14:33:32.809  INFO 18832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-11-28 14:33:32.820  INFO 18832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-28 14:36:38.219  INFO 23928 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-28 14:36:38.219  INFO 23928 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2021-11-28 14:36:38.222  INFO 23928 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2021-11-28 14:36:38.276  INFO 23928 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Starting CinemaProjectBackEndApplication using Java 11.0.11 on HMZ with PID 23928 (D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA\target\classes started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-28 14:36:38.276  INFO 23928 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : No active profile set, falling back to default profiles: default
+2021-11-28 14:36:38.433  INFO 23928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-28 14:36:38.448  INFO 23928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 9 JPA repository interfaces.
+2021-11-28 14:36:38.505  INFO 23928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-28 14:36:38.506  INFO 23928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-28 14:36:38.506  INFO 23928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-28 14:36:38.518  INFO 23928 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-11-28 14:36:38.518  INFO 23928 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 241 ms
+2021-11-28 14:36:38.537  INFO 23928 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-28 14:36:38.540  INFO 23928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2021-11-28 14:36:38.543  INFO 23928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2021-11-28 14:36:38.543  INFO 23928 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-28 14:36:39.354  INFO 23928 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-28 14:36:39.354  INFO 23928 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-28 14:36:39.470  WARN 23928 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-28 14:36:39.559  INFO 23928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-28 14:36:39.566  INFO 23928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 14:36:39.569  INFO 23928 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Started CinemaProjectBackEndApplication in 1.307 seconds (JVM running for 1829.89)
+2021-11-28 14:36:39.569  INFO 23928 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
