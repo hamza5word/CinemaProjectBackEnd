@@ -1,0 +1,169 @@
+2021-11-27 00:03:00.940  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Starting CinemaProjectBackEndApplication using Java 11.0.11 on HMZ with PID 23140 (D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA\target\classes started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-27 00:03:00.944  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : No active profile set, falling back to default profiles: default
+2021-11-27 00:03:00.975  INFO 23140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-27 00:03:00.975  INFO 23140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-27 00:03:01.394  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-27 00:03:01.447  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 9 JPA repository interfaces.
+2021-11-27 00:03:01.806  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-27 00:03:01.820  INFO 23140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-27 00:03:01.821  INFO 23140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-27 00:03:01.874  INFO 23140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-27 00:03:01.874  INFO 23140 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 897 ms
+2021-11-27 00:03:02.009  INFO 23140 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-27 00:03:02.033  INFO 23140 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-11-27 00:03:02.101  INFO 23140 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-27 00:03:02.153  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-27 00:03:02.223  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-27 00:03:02.233  INFO 23140 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-27 00:03:03.214  INFO 23140 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-27 00:03:03.219  INFO 23140 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:03:03.450  WARN 23140 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-27 00:03:04.079  INFO 23140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-27 00:03:04.103  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-27 00:03:04.111  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Started CinemaProjectBackEndApplication in 3.445 seconds (JVM running for 4.166)
+2021-11-27 00:03:13.002  INFO 7560 --- [main] h.c.CinemaProjectBackEndApplicationTests : Starting CinemaProjectBackEndApplicationTests using Java 11.0.11 on HMZ with PID 7560 (started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-27 00:03:13.003  INFO 7560 --- [main] h.c.CinemaProjectBackEndApplicationTests : No active profile set, falling back to default profiles: default
+2021-11-27 00:03:13.502  INFO 7560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-27 00:03:13.575  INFO 7560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 9 JPA repository interfaces.
+2021-11-27 00:03:14.116  INFO 7560 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-27 00:03:14.163  INFO 7560 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-11-27 00:03:14.286  INFO 7560 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-27 00:03:14.561  INFO 7560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-27 00:03:14.688  INFO 7560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-27 00:03:14.713  INFO 7560 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-27 00:03:15.828  INFO 7560 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-27 00:03:15.835  INFO 7560 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:03:16.300  WARN 7560 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-27 00:03:17.227  INFO 7560 --- [main] h.c.CinemaProjectBackEndApplicationTests : Started CinemaProjectBackEndApplicationTests in 4.46 seconds (JVM running for 5.319)
+2021-11-27 00:03:17.595  INFO 7560 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:03:17.598  INFO 7560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-27 00:03:17.615  INFO 7560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-27 00:09:12.732  INFO 23140 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:09:12.735  INFO 23140 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-27 00:09:12.751  INFO 23140 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-27 00:09:12.825  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Starting CinemaProjectBackEndApplication using Java 11.0.11 on HMZ with PID 23140 (D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA\target\classes started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-27 00:09:12.825  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : No active profile set, falling back to default profiles: default
+2021-11-27 00:09:12.981  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-27 00:09:13.004  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 9 JPA repository interfaces.
+2021-11-27 00:09:13.098  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-27 00:09:13.099  INFO 23140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-27 00:09:13.099  INFO 23140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-27 00:09:13.119  INFO 23140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-27 00:09:13.119  INFO 23140 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 291 ms
+2021-11-27 00:09:13.146  INFO 23140 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-27 00:09:13.150  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-11-27 00:09:13.152  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-11-27 00:09:13.152  INFO 23140 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-27 00:09:13.832  INFO 23140 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-27 00:09:13.833  INFO 23140 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:09:13.949  WARN 23140 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-27 00:09:14.275  INFO 23140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-27 00:09:14.291  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-27 00:09:14.295  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Started CinemaProjectBackEndApplication in 1.496 seconds (JVM running for 374.351)
+2021-11-27 00:09:14.298  INFO 23140 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-27 00:09:15.871  INFO 23140 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:09:15.872  INFO 23140 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-11-27 00:09:15.876  INFO 23140 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-11-27 00:09:15.928  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Starting CinemaProjectBackEndApplication using Java 11.0.11 on HMZ with PID 23140 (D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA\target\classes started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-27 00:09:15.928  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : No active profile set, falling back to default profiles: default
+2021-11-27 00:09:16.037  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-27 00:09:16.055  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 9 JPA repository interfaces.
+2021-11-27 00:09:16.114  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-27 00:09:16.114  INFO 23140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-27 00:09:16.115  INFO 23140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-27 00:09:16.128  INFO 23140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-27 00:09:16.128  INFO 23140 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2021-11-27 00:09:16.152  INFO 23140 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-27 00:09:16.156  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-11-27 00:09:16.158  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-11-27 00:09:16.158  INFO 23140 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-27 00:09:16.810  INFO 23140 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-27 00:09:16.811  INFO 23140 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:09:16.873  WARN 23140 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-27 00:09:17.058  INFO 23140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-27 00:09:17.067  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-27 00:09:17.071  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Started CinemaProjectBackEndApplication in 1.159 seconds (JVM running for 377.126)
+2021-11-27 00:09:17.072  INFO 23140 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-27 00:09:58.720  INFO 23140 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:09:58.720  INFO 23140 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-11-27 00:09:58.724  INFO 23140 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-11-27 00:09:58.802  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Starting CinemaProjectBackEndApplication using Java 11.0.11 on HMZ with PID 23140 (D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA\target\classes started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-27 00:09:58.802  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : No active profile set, falling back to default profiles: default
+2021-11-27 00:09:58.889  INFO 26248 --- [main] h.c.CinemaProjectBackEndApplicationTests : Starting CinemaProjectBackEndApplicationTests using Java 11.0.11 on HMZ with PID 26248 (started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-27 00:09:58.890  INFO 26248 --- [main] h.c.CinemaProjectBackEndApplicationTests : No active profile set, falling back to default profiles: default
+2021-11-27 00:09:58.989  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-27 00:09:59.009  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 9 JPA repository interfaces.
+2021-11-27 00:09:59.099  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-27 00:09:59.100  INFO 23140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-27 00:09:59.100  INFO 23140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-27 00:09:59.115  INFO 23140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-27 00:09:59.115  INFO 23140 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 311 ms
+2021-11-27 00:09:59.155  INFO 23140 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-27 00:09:59.158  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-11-27 00:09:59.161  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-11-27 00:09:59.161  INFO 23140 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-27 00:09:59.487  INFO 26248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-27 00:09:59.567  INFO 26248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 9 JPA repository interfaces.
+2021-11-27 00:09:59.873  INFO 23140 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-27 00:09:59.874  INFO 23140 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:09:59.943  WARN 23140 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-27 00:10:00.182  INFO 23140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-27 00:10:00.190  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-27 00:10:00.191  INFO 26248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-27 00:10:00.193  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Started CinemaProjectBackEndApplication in 1.417 seconds (JVM running for 420.248)
+2021-11-27 00:10:00.194  INFO 23140 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-27 00:10:00.234  INFO 26248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-11-27 00:10:00.358  INFO 26248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-27 00:10:00.637  INFO 26248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-27 00:10:00.760  INFO 26248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-27 00:10:00.783  INFO 26248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-27 00:10:01.976  INFO 26248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-27 00:10:01.983  INFO 26248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:10:02.451  WARN 26248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-27 00:10:03.364  INFO 26248 --- [main] h.c.CinemaProjectBackEndApplicationTests : Started CinemaProjectBackEndApplicationTests in 4.802 seconds (JVM running for 5.685)
+2021-11-27 00:10:03.662  INFO 26248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:10:03.664  INFO 26248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-27 00:10:03.674  INFO 26248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-27 00:28:07.633  INFO 23140 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:28:07.635  INFO 23140 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-11-27 00:28:07.638  INFO 23140 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-11-27 00:28:07.706  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Starting CinemaProjectBackEndApplication using Java 11.0.11 on HMZ with PID 23140 (D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA\target\classes started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-27 00:28:07.706  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : No active profile set, falling back to default profiles: default
+2021-11-27 00:28:07.834  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-27 00:28:07.852  INFO 23140 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 9 JPA repository interfaces.
+2021-11-27 00:28:07.936  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-27 00:28:07.937  INFO 23140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-27 00:28:07.937  INFO 23140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-27 00:28:07.951  INFO 23140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-27 00:28:07.951  INFO 23140 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 242 ms
+2021-11-27 00:28:07.978  INFO 23140 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-27 00:28:07.983  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-11-27 00:28:07.986  INFO 23140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-11-27 00:28:07.986  INFO 23140 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-27 00:28:08.616  INFO 17812 --- [main] h.c.CinemaProjectBackEndApplicationTests : Starting CinemaProjectBackEndApplicationTests using Java 11.0.11 on HMZ with PID 17812 (started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-27 00:28:08.617  INFO 17812 --- [main] h.c.CinemaProjectBackEndApplicationTests : No active profile set, falling back to default profiles: default
+2021-11-27 00:28:08.770  INFO 23140 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-27 00:28:08.770  INFO 23140 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:28:08.885  WARN 23140 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-27 00:28:09.066  INFO 23140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-27 00:28:09.074  INFO 23140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-27 00:28:09.077  INFO 23140 --- [restartedMain] c.h.c.CinemaProjectBackEndApplication    : Started CinemaProjectBackEndApplication in 1.39 seconds (JVM running for 1509.132)
+2021-11-27 00:28:09.078  INFO 23140 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-27 00:28:09.177  INFO 17812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-27 00:28:09.239  INFO 17812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 9 JPA repository interfaces.
+2021-11-27 00:28:09.835  INFO 17812 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-27 00:28:09.883  INFO 17812 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-11-27 00:28:10.029  INFO 17812 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-27 00:28:10.308  INFO 17812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-27 00:28:10.427  INFO 17812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-27 00:28:10.451  INFO 17812 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-27 00:28:11.600  INFO 17812 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-27 00:28:11.607  INFO 17812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:28:12.102  WARN 17812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-27 00:28:12.952  INFO 17812 --- [main] h.c.CinemaProjectBackEndApplicationTests : Started CinemaProjectBackEndApplicationTests in 4.668 seconds (JVM running for 5.69)
+2021-11-27 00:28:39.850  INFO 17812 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-27 00:28:39.855  INFO 17812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-27 00:28:39.868  INFO 17812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-27 00:30:40.948  INFO 23140 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-27 00:30:40.950  INFO 23140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-27 00:30:40.950  INFO 23140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
