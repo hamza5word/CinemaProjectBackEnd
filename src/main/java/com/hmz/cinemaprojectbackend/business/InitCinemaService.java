@@ -7,8 +7,9 @@ public interface InitCinemaService {
     void initSalles();
     void initPlaces();
     void initTickets();
-    void initProjections();
+    void initCategories();
     void initFilms();
     void initSeances();
+    void initProjections();
 
 }

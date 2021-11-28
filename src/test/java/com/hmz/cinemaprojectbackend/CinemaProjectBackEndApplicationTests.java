@@ -14,11 +14,16 @@ class CinemaProjectBackEndApplicationTests {
 
     @Test
     void testInitData() {
+        // order is important
         initCinemaService.initVilles();
         initCinemaService.initCinemas();
         initCinemaService.initSalles();
         initCinemaService.initPlaces();
         initCinemaService.initTickets();
+        initCinemaService.initCategories();
+        initCinemaService.initFilms();
+        initCinemaService.initSeances();
+        initCinemaService.initProjections();
     }
 
 }
