@@ -16,15 +16,15 @@ class CinemaProjectBackEndApplicationTests {
     @Test
     void testInitData() {
         // order is important
-        Assertions.assertThrows(Exception.class, () -> initCinemaService.initVilles());
-        Assertions.assertThrows(Exception.class, () -> initCinemaService.initCinemas());
-        Assertions.assertThrows(Exception.class, () -> initCinemaService.initSalles());
-        Assertions.assertThrows(Exception.class, () -> initCinemaService.initPlaces());
-        Assertions.assertThrows(Exception.class, () -> initCinemaService.initTickets());
-        Assertions.assertThrows(Exception.class, () -> initCinemaService.initCategories());
-        Assertions.assertThrows(Exception.class, () -> initCinemaService.initFilms());
-        Assertions.assertThrows(Exception.class, () -> initCinemaService.initSeances());
-        Assertions.assertThrows(Exception.class, () -> initCinemaService.initProjections());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initVilles());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initCinemas());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initSalles());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initPlaces());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initTickets());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initCategories());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initFilms());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initSeances());
+        Assertions.assertDoesNotThrow(() -> initCinemaService.initProjections());
     }
 
 }
