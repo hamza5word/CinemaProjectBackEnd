@@ -4366,3 +4366,29 @@ Caused by: java.sql.SQLException: Can't create table `cinema`.`ticket` (errno: 1
 2021-11-29 00:45:29.181  INFO 20972 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-11-29 00:45:29.184  INFO 20972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-11-29 00:45:29.194  INFO 20972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-29 01:01:15.733  INFO 12936 --- [main] h.c.CinemaProjectBackEndApplicationTests : Starting CinemaProjectBackEndApplicationTests using Java 11.0.11 on HMZ with PID 12936 (started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\CINEMA)
+2021-11-29 01:01:15.749  INFO 12936 --- [main] h.c.CinemaProjectBackEndApplicationTests : No active profile set, falling back to default profiles: default
+2021-11-29 01:01:16.444  INFO 12936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-29 01:01:16.531  INFO 12936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 9 JPA repository interfaces.
+2021-11-29 01:01:17.249  INFO 12936 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-29 01:01:17.307  INFO 12936 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-11-29 01:01:17.487  INFO 12936 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-29 01:01:17.792  INFO 12936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-29 01:01:17.940  INFO 12936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-29 01:01:17.967  INFO 12936 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-29 01:01:19.192  INFO 12936 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-29 01:01:19.198  INFO 12936 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-29 01:01:19.838  WARN 12936 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-29 01:01:20.717  INFO 12936 --- [main] h.c.CinemaProjectBackEndApplicationTests : Started CinemaProjectBackEndApplicationTests in 5.286 seconds (JVM running for 7.08)
+2021-11-29 01:01:20.904  INFO 12936 --- [main] c.h.c.b.impl.InitCinemaServiceImpl       : >> Villes initialization completed
+2021-11-29 01:01:21.050  INFO 12936 --- [main] c.h.c.b.impl.InitCinemaServiceImpl       : >> Cinemas initialization completed
+2021-11-29 01:01:21.235  INFO 12936 --- [main] c.h.c.b.impl.InitCinemaServiceImpl       : >> Salles initialization completed
+2021-11-29 01:01:29.759  INFO 12936 --- [main] c.h.c.b.impl.InitCinemaServiceImpl       : >> Places initialization completed
+2021-11-29 01:01:29.781  INFO 12936 --- [main] c.h.c.b.impl.InitCinemaServiceImpl       : >> Categories initialization completed
+2021-11-29 01:01:29.824  INFO 12936 --- [main] c.h.c.b.impl.InitCinemaServiceImpl       : >> Films initialization completed
+2021-11-29 01:01:29.863  INFO 12936 --- [main] c.h.c.b.impl.InitCinemaServiceImpl       : >> Seances initialization completed
+2021-11-29 01:01:30.697  INFO 12936 --- [main] c.h.c.b.impl.InitCinemaServiceImpl       : >> Projections initialization completed
+2021-11-29 01:01:34.852  INFO 12936 --- [main] c.h.c.b.impl.InitCinemaServiceImpl       : >> Tickets initialization completed
+2021-11-29 01:01:34.867  INFO 12936 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-29 01:01:34.870  INFO 12936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-29 01:01:34.880  INFO 12936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

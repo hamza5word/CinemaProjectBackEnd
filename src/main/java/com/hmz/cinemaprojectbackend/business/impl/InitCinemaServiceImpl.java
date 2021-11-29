@@ -39,7 +39,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
             v.setName(ville);
             villeRepository.save(v);
         });
-        logger.info(">> Villes initialization completed");
+        logger.info("DEV_LOG:  Villes initialization completed");
     }
 
     @Override
@@ -51,7 +51,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
             c.setVille(v);
             cinemaRepository.save(c);
         }));
-        logger.info(">> Cinemas initialization completed");
+        logger.info("DEV_LOG:  Cinemas initialization completed");
     }
 
     @Override
@@ -65,7 +65,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
                 salleRepository.save(s);
             }
         });
-        logger.info(">> Salles initialization completed");
+        logger.info("DEV_LOG:  Salles initialization completed");
     }
 
     @Override
@@ -78,7 +78,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
                 placeRepository.save(p);
             }
         });
-        logger.info(">> Places initialization completed");
+        logger.info("DEV_LOG:  Places initialization completed");
     }
 
     @Override
@@ -88,7 +88,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
             c.setName(categorie);
             categorieRepository.save(c);
         });
-        logger.info(">> Categories initialization completed");
+        logger.info("DEV_LOG:  Categories initialization completed");
     }
 
     @Override
@@ -102,7 +102,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
             f.setCategorie(categories.get(new Random(0, categories.size()).getIntRandom()));
             filmRepository.save(f);
         });
-        logger.info(">> Films initialization completed");
+        logger.info("DEV_LOG:  Films initialization completed");
     }
 
 
@@ -119,7 +119,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
                 logger.error(e.getMessage(), e);
             }
         });
-        logger.info(">> Seances initialization completed");
+        logger.info("DEV_LOG:  Seances initialization completed");
     }
 
     @Override
@@ -142,7 +142,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
                 });
             });
         });
-        logger.info(">> Projections initialization completed");
+        logger.info("DEV_LOG:  Projections initialization completed");
     }
 
     @Override
@@ -157,7 +157,7 @@ public class InitCinemaServiceImpl implements InitCinemaService {
                 ticketRepository.save(t);
             }
         });
-        logger.info(">> Tickets initialization completed");
+        logger.info("DEV_LOG:  Tickets initialization completed");
     }
 
 }
