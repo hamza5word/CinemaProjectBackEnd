@@ -24,5 +24,7 @@ public class Ticket implements Serializable {
 
     @ManyToOne
     private Place place;
+    @ManyToOne
+    private Projection projection;
 
 }

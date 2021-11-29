@@ -146,16 +146,17 @@ public class InitCinemaServiceImpl implements InitCinemaService {
     }
 
     @Override
+    @Transactional
     public void initTickets() {
-        placeRepository.findAll().forEach(p -> {
-            for(int i = 0; i<new Random(1, 3).getIntRandom(); i++) {
+        projectionRepository.findAll().forEach(p -> {
+            p.getSalle().getPlaces().forEach(pl -> {
                 Ticket t = new Ticket();
-                t.setNomClient("Client " + (i + 1));
-                t.setPrix(new Random(100, 300).getRandom());
+                t.setPrix(p.getPrix());
+                t.setProjection(p);
+                t.setPlace(pl);
                 t.setReservee(false);
-                t.setPlace(p);
                 ticketRepository.save(t);
-            }
+            });
         });
         logger.info("DEV_LOG:  Tickets initialization completed");
     }

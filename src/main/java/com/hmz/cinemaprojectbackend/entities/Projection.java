@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
 
 @Entity
@@ -26,5 +27,7 @@ public class Projection implements Serializable {
     private Salle salle;
     @ManyToOne
     private Seance seance;
+    @OneToMany(mappedBy = "projection")
+    private Collection<Ticket> tickets;
 
 }
